@@ -1,0 +1,44 @@
+header {
+  position: fixed;
+  top: 0;
+  height: 120px;
+  width: 100%;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  z-index: 1000;
+  #logo {
+    width: 168px;
+    height: 28px;
+    background: url(/assets/images/ui/secondsunday.svg) no-repeat 0 50%;
+    justify-content: flex-start;
+    margin-left: 50px;
+  }
+
+  #menu {
+    display: flex;
+    align-items: center;
+    ul {
+      margin-right: 50px;
+      li {
+        display: inline-block;
+        list-style-type: none;
+        padding-left: 50px;
+        a {
+          color: #fff;
+        }
+      }
+    }
+    #menu-button {
+      width: 52px;
+      height: 30px;
+      margin-right: 50px;
+      background: url(/assets/images/ui/menu-button.svg);
+      cursor: pointer;
+      &:hover {
+        opacity: .75;
+      }
+    }
+  }
+
+}
