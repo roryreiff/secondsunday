@@ -31,7 +31,11 @@ h4, h5, h6 {
 
 p {
   margin-top: 0;
-  margin-bottom: 1rem;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 32px;
+  color: #FFFFFF;
 }
 
 ul, ol, dl {
@@ -107,10 +111,10 @@ a[href^="#fnref:"] {
 }
 
 // Custom type
-//
-// Extend paragraphs with `.lead` for larger introductory text.
-
-.lead {
-  font-size: 1.25rem;
-  font-weight: 300;
+.section-title {
+  font-weight: 900;
+  font-size: 20px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #FFFFFF;
 }
