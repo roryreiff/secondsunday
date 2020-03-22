@@ -127,3 +127,12 @@ a[href^="#fnref:"] {
     transform: translateY(-5px);
   }
 }
+
+footer .section-title {
+  font-size: 16px;
+  &::before {
+    border-top: 2px solid #ffffff;
+    width: 40px;
+    transform: translateY(-5px);
+  }
+}

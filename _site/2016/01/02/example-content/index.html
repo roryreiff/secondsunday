@@ -38,6 +38,30 @@
   <body style="background-image: url(); background-position: 50 0; background-size: cover; background-attachment: fixed;">
 
     <header>
+    <!-- menu test as per https://codepen.io/markcaron/pen/pPZVWO -->
+
+
+ <nav id="main-menu" class="main-menu" aria-label="Main menu">
+   <a href="#main-menu-toggle"
+      id="main-menu-close"
+      class="menu-close"
+      aria-label="Close main menu">
+     <span class="sr-only">Close main menu</span>
+     <span class="fa fa-close" aria-hidden="true"></span>
+   </a>
+   <ul>
+     <li><a href="#">Vision</a></li>
+     <li><a href="#">People</a></li>
+     <li><a href="#">Attend</a></li>
+     <li><a href="#">Giving</a></li>
+     <li><a href="#">Contact</a></li>
+   </ul>
+ </nav>
+ <a href="#main-menu-toggle"
+    class="backdrop"
+    tabindex="-1"
+    aria-hidden="true" hidden></a>
+
 
       <div id="logo"></div>
 
@@ -47,10 +71,17 @@
           <li><a href="/">People</a></li>
           <li><a href="/">Attend</a></li>
         </ul>
-        <div id="menu-button"></div>
+        <div id="menu-button"><a href="#main-menu"
+        id="main-menu-toggle"
+        class="menu-toggle"
+        aria-label="Open main menu">
+       <span class="sr-only">Open main menu</span>
+       <span class="fa fa-bars" aria-hidden="true"></span>
+     </a></div>
       </div>
-      
+
     </header>
+
     <article class="post">
   <h1 class="post-title">Example content</h1>
   <time datetime="2016-01-02T00:00:00-08:00" class="post-date">02 Jan 2016</time>
@@ -259,6 +290,18 @@
   </ul>
 </aside>
 
+
+
+    <footer>
+  <div class="container">
+    <div class="footer-item">
+      <h3 class="section-title">Join us</h3>
+    </div>
+    <div class="footer-item">
+      <h3 class="section-title">Get the app</h3>
+    </div>
+  </div>
+</footer>
 
 
     

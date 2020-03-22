@@ -3,9 +3,9 @@
 // Styles for managing the structural hierarchy of the site.
 
 .container {
-  max-width: 38rem;
-  padding-left:  1.5rem;
-  padding-right: 1.5rem;
+  max-width: 1500px;
+  padding-left:  100px;
+  padding-right: 100px;
   margin-left:  auto;
   margin-right: auto;
 }
@@ -13,13 +13,14 @@
 .image-grid {
   top: 150px;
   display: grid;
-  grid-template-columns: repeat(10, 1fr);
+  grid-template-columns: repeat(20, 1fr);
+  grid-auto-rows: 50px;
 }
 
 .hero-banner {
   position: absolute;
   left: 100px;
-  top: 50%;
+  top: 300px;
   padding: 60px 80px;
   background: #EB705F;
   font-size: 45px;
@@ -29,7 +30,7 @@
 
 .announcement {
   width: 100%;
-  height: 800px;
+  height: 1000px;
   display: flex;
   align-items: flex-end;
   .announcement-info {
@@ -76,6 +77,17 @@ a.button {
   color: #FFFFFF;
 }
 
+.mosaic {
+  div {
+  }
+}
 footer {
-  margin-bottom: 2rem;
+  padding: 100px 0;
+  background: #2E2E2E;
+  .container {
+    display: flex;
+    .footer-item {
+      width: 50%;
+    }
+  }
 }
