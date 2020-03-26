@@ -6,6 +6,12 @@ paginate: 1
 baseurl: ""
 permalink: pretty
 
+# links
+links:
+  giving: https://pushpay.com/g/secondsundaysd
+  instagram: https://www.instagram.com/secondsundaysd
+  facebook: https://www.facebook.com/secondsundaysd
+
 # Gems
 plugins:
   - jekyll-gist
@@ -36,6 +42,7 @@ author:
   name: Mark Otto
   url: https://twitter.com/mdo
   email: markdotto@gmail.com
+  fly: yo
 
 # Custom vars
 version: 3.0.0
