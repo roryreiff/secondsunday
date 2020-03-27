@@ -131,4 +131,25 @@ footer {
   padding: 20px;
   line-height: 34px;
 }
+
+a.button {
+  display: inline-block;
+}
+.announcement {
+  height: 800px;
+  .announcement-info {
+    width: 100%;
+    margin: 0 30px 30px 30px;
+    .announcement-info-box {
+      display: block;
+      .button {
+        margin: 40px 20px 0 0;
+      }
+    }
+  }
+  .right {
+    h3 { text-align: left !important; }
+  }
+}
+
 }
