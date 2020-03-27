@@ -10,13 +10,6 @@
   margin-right: auto;
 }
 
-.image-grid {
-  top: 150px;
-  display: grid;
-  grid-template-columns: repeat(20, 1fr);
-  grid-auto-rows: 50px;
-}
-
 .hero-banner {
   position: absolute;
   left: 100px;
@@ -26,6 +19,7 @@
   font-size: 45px;
   line-height: 70px;
   color: #fff;
+  z-index: 1000;
 }
 
 .announcement {
@@ -77,10 +71,6 @@ a.button {
   color: #FFFFFF;
 }
 
-.mosaic {
-  div {
-  }
-}
 footer {
   padding: 100px 0;
   background: #2E2E2E;
