@@ -11,7 +11,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: 85px;
+  line-height: 120px;
+  color: #fff;
+  font-weight: normal;
 }
 
 h2 {
@@ -134,5 +137,11 @@ footer .section-title {
     border-top: 2px solid #ffffff;
     width: 40px;
     transform: translateY(-5px);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 32px;
   }
 }

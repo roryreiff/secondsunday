@@ -10,6 +10,17 @@
   margin-right: auto;
 }
 
+.h1-container {
+  position: absolute;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  z-index: 100;
+}
+h1 {
+  margin: auto 0 auto 100px;
+}
+
 .hero-banner {
   position: absolute;
   left: 100px;
@@ -152,4 +163,11 @@ a.button {
   }
 }
 
+}
+
+@media only screen and (max-width: 600px) {
+.h1-container {
+  height: auto;
+  background: red;
+}
 }
