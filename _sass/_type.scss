@@ -10,9 +10,9 @@ h1, h2, h3, h4, h5, h6 {
   text-rendering: optimizeLegibility;
 }
 
-h1, h2 {
-  font-size: 85px;
-  line-height: 120px;
+h1, h2, .headline {
+  font-size: 65px;
+  line-height: 90px;
   color: #fff;
   font-weight: bold;
 }
@@ -31,10 +31,20 @@ p {
   margin-top: 0;
   font-style: normal;
   font-weight: normal;
-  font-size: 22px;
-  line-height: 32px;
+  font-size: 42px;
+  line-height: 58px;
   color: #FFFFFF;
 }
+
+p.headline {
+  font-size: 65px;
+  line-height: 90px;
+  color: #fff;
+  font-weight: bold;
+}
+
+
+
 
 ul, ol, dl {
   margin: 0;
@@ -137,7 +147,16 @@ footer .section-title {
 
 @media only screen and (max-width: 600px) {
   h1, h2 {
-    font-size: 48px;
-    line-height: 62px;
+    font-size: 32px;
+    line-height: 46px;
   }
+  p {
+    font-size: 22px;
+    line-height: 32px;
+  }
+  p.headline {
+    font-size: 32px;
+    line-height: 46px;
+  }
+
 }

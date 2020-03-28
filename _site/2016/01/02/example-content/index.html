@@ -35,7 +35,7 @@
 </head>
 
 
-  <body style="background-image: url(); background-position: 50 0; background-size: cover; background-attachment: fixed;">
+  <body style="background: url() no-repeat center center fixed; background-size: cover;">
 
     <header>
     <!-- menu test as per https://codepen.io/markcaron/pen/pPZVWO -->
@@ -67,7 +67,7 @@
 
       <div id="menu">
         <ul id="menu-short">
-          <li><a href="/">Vision</a></li>
+          <li><a href="/vision">Vision</a></li>
           <li><a href="/">People</a></li>
           <li><a href="/">Attend</a></li>
         </ul>
@@ -325,9 +325,6 @@
       window.addEventListener("load", function () {
         // Accepts any class name
         var rellax = new Rellax('.rellax');
-        var rellax = new Rellax('.rellax-contained', {
-          wrapper: '.announcement'
-        });
       });
     </script>
 

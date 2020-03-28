@@ -10,15 +10,23 @@
   margin-right: auto;
 }
 
-.h1-container {
+.h1-container, .h1-container-sub {
   position: absolute;
   margin: 0;
   height: 100vh;
+  min-height: 800px;
   display: flex;
   z-index: 100;
 }
+.h1-container-sub {
+  position: relative;
+  height: 97vh;
+}
 h1 {
   margin: auto 100px;
+}
+p.headline {
+  margin: 0 0 40px 0;
 }
 
 .hero-banner {
@@ -31,6 +39,32 @@ h1 {
   line-height: 70px;
   color: #fff;
   z-index: 100;
+}
+.page-content {
+  background:#AC9693;
+}
+
+.vision-statement {
+  min-height: 850px;
+  margin-bottom: 100px;
+  img {
+    max-width: 800px;
+    position: absolute;
+  }
+  .vision-content {
+    position: relative;
+    width: auto;
+    margin: 0 100px 0 40%;
+    padding: 150px 0 0 0;
+  }
+  &.left {
+    img {
+      right: 0;
+    }
+    .vision-content {
+        margin: 0 40% 0 100px;
+    }
+  }
 }
 
 .announcement {
@@ -84,6 +118,7 @@ a.button {
 }
 
 footer {
+  position: relative;
   padding: 100px 0;
   background: #2E2E2E;
   .container {
@@ -167,11 +202,35 @@ a.button {
 }
 
 @media only screen and (max-width: 600px) {
-.h1-container {
+.h1-container, .h1-container-sub {
   height: auto;
-  margin-top: 175px;
+  margin-top: 150px;
   h1 {
     margin: 0 50px;
+  }
+}
+
+p.headline {
+  margin: 0 0 20px 0;
+}
+.vision-statement {
+  min-height: 400px;
+  margin-bottom: 10%;
+  img {
+    position: relative;
+    width: 100%;
+  }
+  .vision-content {
+    padding: 30px 0;
+    margin: 0 50px 0 50px;
+  }
+  &.left {
+    img {
+      right: auto;
+    }
+    .vision-content {
+        margin: 0 50px 0 50px;
+    }
   }
 }
 }

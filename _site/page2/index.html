@@ -33,7 +33,7 @@
 </head>
 
 
-  <body style="background-image: url(/assets/images/home/bg@2x.jpg); background-position: 50 0; background-size: cover; background-attachment: fixed;">
+  <body style="background: url(/assets/images/home/bg@2x.jpg) no-repeat center center fixed; background-size: cover;">
 
     <header>
     <!-- menu test as per https://codepen.io/markcaron/pen/pPZVWO -->
@@ -65,7 +65,7 @@
 
       <div id="menu">
         <ul id="menu-short">
-          <li><a href="/">Vision</a></li>
+          <li><a href="/vision">Vision</a></li>
           <li><a href="/">People</a></li>
           <li><a href="/">Attend</a></li>
         </ul>
@@ -81,7 +81,7 @@
     </header>
 
     <div class="h1-container">
-  <h1 class="col col-right rellax" data-rellax-speed="4">We exist for reconciliation.<br>To see Heaven touch Earth.<br>To help our city flourish.</h1>
+  <h1 class="rellax" data-rellax-speed="4">We exist for reconciliation.<br>To see Heaven touch Earth.<br>To help our city flourish.</h1>
 </div>
 <div class="image-grid">
   <div class="row">
@@ -164,9 +164,6 @@
       window.addEventListener("load", function () {
         // Accepts any class name
         var rellax = new Rellax('.rellax');
-        var rellax = new Rellax('.rellax-contained', {
-          wrapper: '.announcement'
-        });
       });
     </script>
 
