@@ -42,24 +42,26 @@ p.headline {
 }
 .page-content {
   background:#AC9693;
+  padding: 100px 0;
 }
 
 .vision-statement {
   min-height: 850px;
   margin-bottom: 100px;
   img {
-    max-width: 800px;
+    max-width: 650px;
     position: absolute;
+    margin-left: 100px;
   }
   .vision-content {
     position: relative;
     width: auto;
     margin: 0 100px 0 40%;
-    padding: 150px 0 0 0;
+    padding: 100px 0 0 0;
   }
   &.left {
     img {
-      right: 0;
+      right: 100px;
     }
     .vision-content {
         margin: 0 40% 0 100px;
