@@ -10,16 +10,11 @@ h1, h2, h3, h4, h5, h6 {
   text-rendering: optimizeLegibility;
 }
 
-h1 {
+h1, h2 {
   font-size: 85px;
   line-height: 120px;
   color: #fff;
-  font-weight: normal;
-}
-
-h2 {
-  margin-top: 1rem;
-  font-size: 1.5rem;
+  font-weight: bold;
 }
 
 h3 {
@@ -141,7 +136,8 @@ footer .section-title {
 }
 
 @media only screen and (max-width: 600px) {
-  h1 {
-    font-size: 32px;
+  h1, h2 {
+    font-size: 48px;
+    line-height: 62px;
   }
 }

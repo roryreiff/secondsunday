@@ -81,37 +81,37 @@
     </header>
 
     <div class="h1-container">
-  <h1>We exist for reconciliation.<br>To see Heaven touch Earth.<br>To help our city flourish.</h1>
+  <h1 class="col col-right rellax" data-rellax-speed="4">We exist for reconciliation.<br>To see Heaven touch Earth.<br>To help our city flourish.</h1>
 </div>
 <div class="image-grid">
   <div class="row">
-    <div class="col col-right rellax" data-rellax-speed="7"></div>
+    <div class="col col-right rellax" data-rellax-speed="0"></div>
   </div>
   <div class="row">
     <div class="col">
-      <img class="rellax" src="/assets/images/home/grid-3@2x.jpg" data-rellax-speed="9"/>
-      <img src="/assets/images/home/grid-6@2x.jpg" />
+      <img class="rellax" data-rellax-speed="1" src="/assets/images/home/grid-3@2x.jpg" />
+      <img class="rellax" data-rellax-speed="4" src="/assets/images/home/grid-6@2x.jpg" />
     </div>
     <div class="col">
-      <img src="/assets/images/home/grid-4@2x.jpg" />
-      <img src="/assets/images/home/grid-5@2x.jpg"/>
+      <img class="rellax" data-rellax-speed="3" src="/assets/images/home/grid-4@2x.jpg" />
+      <img class="rellax" data-rellax-speed="0" src="/assets/images/home/grid-5@2x.jpg"/>
     </div>
   </div>
   <div class="row">
     <div class="col">
-      <img src="/assets/images/home/grid-7@2x.jpg" />
-      <img src="/assets/images/home/grid-10@2x.jpg" />
+      <img class="rellax" data-rellax-speed="2" src="/assets/images/home/grid-7@2x.jpg" />
+      <img class="rellax" data-rellax-speed="5" src="/assets/images/home/grid-10@2x.jpg" />
     </div>
     <div class="col">
-      <img src="/assets/images/home/grid-8@2x.jpg" />
-      <img src="/assets/images/home/grid-9@2x.jpg" />
+      <img class="rellax" data-rellax-speed="2" src="/assets/images/home/grid-8@2x.jpg" />
+      <img class="rellax" data-rellax-speed="1" src="/assets/images/home/grid-9@2x.jpg" />
     </div>
   </div>
 </div>
 
 <div class="announcement" style="background: url(/assets/images/join-us-for-worship@2x.jpg); background-size: cover; background-position: 50% 0;">
-  <div class="announcement-info">
-    <h3 class="section-title">Join us for worship</h3>
+  <div class="announcement-info" >
+    <h2>Join us for worship</h2>
     <div class="announcement-info-box">
       <p>Sundays at 4pm<br>J11 - 1051 J St.<br>San Diego, CA 92101</p>
       <a class="button" href="/">Get Directions</a>
@@ -121,7 +121,7 @@
 
 <div class="announcement" style="background: url(/assets/images/get-the-app@2x.jpg); background-size: cover; background-position: 50% 0;">
   <div class="announcement-info right">
-    <h3 class="section-title">Get the app</h3>
+    <h2>Get the app</h2>
     <div class="announcement-info-box">
       <p>Weekly meetups, prayer support, a running club... It’s all on the Second Sunday app.</p>
       <a class="button" href="/">iOS</a>
@@ -164,6 +164,9 @@
       window.addEventListener("load", function () {
         // Accepts any class name
         var rellax = new Rellax('.rellax');
+        var rellax = new Rellax('.rellax-contained', {
+          wrapper: '.announcement'
+        });
       });
     </script>
 
