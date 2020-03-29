@@ -18,11 +18,11 @@
      <span class="fa fa-close" aria-hidden="true"></span>
    </a>
    <ul>
-     <li><a href="#">Vision</a></li>
-     <li><a href="#">People</a></li>
-     <li><a href="#">Attend</a></li>
-     <li><a href="#">Giving</a></li>
-     <li><a href="#">Contact</a></li>
+     <li><a href="/vision">Vision</a></li>
+     <li><a href="/people">People</a></li>
+     <li><a href="/attend">Attend</a></li>
+     <li><a href="{{site.links.giving}}">Giving</a></li>
+     <li><a href="/contact">Contact</a></li>
    </ul>
  </nav>
  <a href="#main-menu-toggle"
@@ -31,13 +31,13 @@
     aria-hidden="true" hidden></a>
 
 
-      <div id="logo"></div>
+      <a href="/" id="logo"></a>
 
       <div id="menu">
         <ul id="menu-short">
           <li><a href="/vision">Vision</a></li>
-          <li><a href="/">People</a></li>
-          <li><a href="/">Attend</a></li>
+          <li><a href="/people">People</a></li>
+          <li><a href="/attend">Attend</a></li>
         </ul>
         <div id="menu-button"><a href="#main-menu"
         id="main-menu-toggle"
@@ -63,12 +63,14 @@
       });
     </script>
 
+    <!--
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init({
         offset: 450
       });
     </script>
+    -->
 
     {% if site.ga_analytics %}
      <script>

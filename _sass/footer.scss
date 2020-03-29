@@ -1,0 +1,78 @@
+footer {
+  margin: 0;
+  padding: 100px 0;
+  background: #2E2E2E;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    .footer-item {
+      width: 50%;
+      padding-right: 50px;
+      h3, p {
+        margin-bottom: 40px;
+      }
+      a {
+        display: inline-block;
+        margin-right: 20px;
+      }
+    }
+  }
+  ul {
+    margin: 150px 0 0 0;
+    padding: 0;
+    li {
+      display: inline;
+      font-size: 18px;
+      margin: 0 40px 0 0;
+      padding: 0;
+      color: rgba(255,255,255,.5);
+      a {
+        color: #fff;
+      }
+    }
+    .instagram-icon {
+      margin-right: 20px;
+      a {
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        background: url(/assets/images/ui/ig-icon.svg);
+      }
+    }
+    .facebook-icon {
+      margin-right: 0;
+      a {
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        background: url(/assets/images/ui/facebook-icon.svg);
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+footer {
+  padding: 0;
+  .container {
+    display: block;
+    width: 100%;
+    .footer-item {
+      display: block;
+      width: 100%;
+      padding: 0 50px;
+      margin-bottom: 50px;
+    }
+    ul {
+      padding: 0 50px;
+      margin: 0;
+      padding-bottom: 50px;
+    }
+    ul.links {
+      li {
+        display: block;
+      }
+    }
+  }
+}
+}

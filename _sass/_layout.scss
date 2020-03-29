@@ -46,25 +46,36 @@ p.headline {
 }
 
 .vision-statement {
-  min-height: 850px;
-  margin-bottom: 100px;
+  margin-bottom: 150px;
+  p {
+    margin-bottom: 0;
+  }
+  p.headline {
+    margin-bottom: 30px;
+  }
   img {
-    max-width: 650px;
-    position: absolute;
+    max-width: 37%;
+    float: left;
     margin-left: 100px;
   }
   .vision-content {
     position: relative;
-    width: auto;
-    margin: 0 100px 0 40%;
-    padding: 100px 0 0 0;
+    width: 40%;
+    margin: 0 100px 0 50%;
+    padding: 0 0 0 0;
+    .clear {
+      width: 100%;
+      clear: both;
+    }
   }
   &.left {
     img {
-      right: 100px;
+      float: right;
+      margin-left: 0;
+      margin-right: 100px;
     }
     .vision-content {
-        margin: 0 40% 0 100px;
+        margin: 0 0 0 100px;
     }
   }
 }
@@ -119,59 +130,14 @@ a.button {
   color: #FFFFFF;
 }
 
-footer {
-  position: relative;
-  padding: 100px 0;
-  background: #2E2E2E;
-  .container {
-    display: flex;
-    justify-content: space-between;
-    .footer-item {
-      width: 50%;
-      padding-right: 50px;
-      h3, p {
-        margin-bottom: 40px;
-      }
-      a {
-        display: inline-block;
-        margin-right: 20px;
-      }
-    }
-  }
-  ul {
-    margin: 150px 0 0 0;
-    padding: 0;
-    li {
-      display: inline;
-      font-size: 18px;
-      margin: 0 40px 0 0;
-      padding: 0;
-      color: rgba(255,255,255,.5);
-      a {
-        color: #fff;
-      }
-    }
-    .instagram-icon {
-      margin-right: 20px;
-      a {
-        display: inline-block;
-        width: 40px;
-        height: 40px;
-        background: url(/assets/images/ui/ig-icon.svg);
-      }
-    }
-    .facebook-icon {
-      margin-right: 0;
-      a {
-        display: inline-block;
-        width: 40px;
-        height: 40px;
-        background: url(/assets/images/ui/facebook-icon.svg);
-      }
-    }
+.people-grid {
+  display: flex;
+  width: 100%;
+  padding: 0 100px;
+  img {
+    max-width: 300px;
   }
 }
-
 @media only screen and (max-width: 600px) {
 .hero-banner {
   top: 150px;
@@ -204,31 +170,43 @@ a.button {
 }
 
 @media only screen and (max-width: 600px) {
+.container {
+  padding: 0;
+}
+
 .h1-container, .h1-container-sub {
   height: auto;
-  margin-top: 150px;
+  min-height: auto;
+  padding: 150px 0;
   h1 {
     margin: 0 50px;
   }
 }
 
+.page-content {
+  padding-top: 0;
+}
 p.headline {
   margin: 0 0 20px 0;
 }
 .vision-statement {
-  min-height: 400px;
-  margin-bottom: 10%;
+  margin-bottom: 50px;
   img {
     position: relative;
     width: 100%;
+    max-width: 100%;
+    float: none;
+    margin-left: 0;
   }
   .vision-content {
     padding: 30px 0;
     margin: 0 50px 0 50px;
+    width:  auto;
   }
   &.left {
     img {
-      right: auto;
+      float: none;
+      margin: 0;
     }
     .vision-content {
         margin: 0 50px 0 50px;
