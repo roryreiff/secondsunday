@@ -41,6 +41,11 @@ p.headline {
   line-height: 64px;
   color: #fff;
   font-weight: bold;
+
+  span.sub-headline {
+    display: block;
+    opacity: .5;
+  }
 }
 
 

@@ -3,8 +3,8 @@
 
   {% include head.html %}
 
-  <body class="{{page.body-class}}" style="background: url({{page.background-image}}) no-repeat center center fixed; background-size: cover;">
-
+  <body class="{{page.body-class}}" style="background-image: url({{page.background-image}})"
+  >
     <header>
     <!-- menu test as per https://codepen.io/markcaron/pen/pPZVWO -->
 
@@ -49,6 +49,8 @@
       </div>
 
     </header>
+
+    <div class="page-background" style="background-image: url({{page.background-image}});"></div>
 
     {{ content }}
 
