@@ -150,10 +150,17 @@ footer .section-title {
   }
 }
 
+@media only screen and (max-width: 1000px) {
+  h1, h2, .headline {
+    font-size: 46px;
+    line-height: 58px;
+  }
+}
+
 @media only screen and (max-width: 600px) {
   h1, h2 {
-    font-size: 32px;
-    line-height: 46px;
+    font-size: 30px;
+    line-height: 42px;
   }
   p {
     font-size: 22px;
