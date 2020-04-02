@@ -1,5 +1,29 @@
 .image-grid-container {
-  padding-bottom: 100px;
+  position: relative;
+  margin-bottom: 200px;
+  z-index: 100;
+  img.outlier {
+    position: absolute;
+  }
+  #img-hand-clouds {
+    width: 18%;
+    max-width: 200px;
+    right: 0;
+    margin-right: -7%;
+    top: -12%;
+  }
+  #img-cross {
+    width: 10%;
+    max-width: 150px;
+    left: 7%;
+    bottom: -23%;
+  }
+  #img-hand-light {
+    width: 18%;
+    max-width: 200px;
+    left: 7%;
+    top: 42%;
+  }
 }
 
 .image-grid {
@@ -14,7 +38,7 @@
   }
 }
 
-.image-grid-container:last-child {
+.image-grid-container-bottom {
   margin-bottom: 0;
 }
 
@@ -33,5 +57,25 @@
 }
 
 @media only screen and (max-width: 600px) {
-
+  .image-grid-container {
+    margin-bottom: 0;
+    #img-hand-clouds {
+      margin-right: 0;
+      width: 25%;
+      top: -25%;
+    }
+    #img-cross {
+      width: 20%;
+      bottom: -40%;
+    }
+    #img-hand-light {
+      width: 25%;
+      left: 5%;
+      top: 40%;
+    }
+  }
+  .image-grid {
+    grid-gap: 0;
+    margin-bottom: 0;
+  }
 }
