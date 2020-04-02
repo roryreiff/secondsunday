@@ -11,14 +11,22 @@ body {
 .container {
   padding-left:  100px;
   padding-right: 100px;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
 .h1-container, .h1-container-sub {
   position: relative;
   margin: 0;
   padding: 225px 0;
-  display: flex;
   z-index: 100;
+  width: 100%;
+  h1 {
+    margin: 0;
+    left: 0;
+    position: relative;
+    text-align: left;
+  }
 }
 
 .h1-container-sub {
@@ -32,12 +40,12 @@ p.headline {
 .page-content {
   position: relative;
   background:#AC9693;
-  padding: 100px 0;
+  padding: 100px 0 0 0;
   z-index: 1;
 }
 
 .vision-statement, .home-feature {
-  margin-bottom: 150px;
+  padding-bottom: 150px;
   position: relative;
   p {
     margin-bottom: 0;
@@ -107,12 +115,11 @@ a.button {
 }
 
 .people-grid {
-  display: flex;
   width: 100%;
-  padding: 0 100px;
-  img {
-    max-width: 300px;
-  }
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 15px;
+  margin-bottom: 150px;
 }
 
 
@@ -152,7 +159,7 @@ p.headline {
   margin: 0 0 20px 0;
 }
 .vision-statement, .home-feature {
-  margin-bottom: 50px;
+  padding-bottom: 50px;
   img {
     position: relative;
     width: 100%;
@@ -192,6 +199,11 @@ p.headline {
     img {
     }
   }
-
 }
+
+.people-grid {
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 100px;
+}
+
 }

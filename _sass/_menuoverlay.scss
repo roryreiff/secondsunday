@@ -46,13 +46,13 @@
 
 .main-menu ul {
   list-style: none;
-  margin: 100px 0 0 100px;
+  margin: 100px 0 0 0;
   width: 100%;
   font-size: 50px;
   line-height: 100px;
+  padding: 0;
   li {
     display: block;
-
   }
 }
 
@@ -131,6 +131,7 @@
  Horizontal menu
 */
 @media (min-width: 768px) {
+
   .menu-toggle,
   .main-menu .menu-close {
     // display: none;
@@ -148,6 +149,7 @@
   .main-menu ul {
 
     /* Undo off-canvas styling */
+
     }
 
   .main-menu a {

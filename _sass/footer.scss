@@ -62,17 +62,20 @@ footer {
     .footer-item {
       display: block;
       width: 100%;
-      padding: 0 50px;
       margin-bottom: 75px;
+      padding-right: 0;
+      a {
+        margin-bottom: 20px;
+      }
     }
     ul {
-      padding: 0 50px;
       margin: 0;
       padding-bottom: 50px;
     }
     ul.links {
       li {
         display: block;
+        margin-bottom: 20px;
       }
     }
   }
