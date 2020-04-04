@@ -1,6 +1,6 @@
 # Setup
 title: Second Sunday San Diego
-tagline: Making the return to God irresistible
+tagline: Second Sunday is a community of faith pursuing what it means to be truly human and seeking a rick experience of community in the light of God’s love.
 url: https://secondsundaysd.com
 paginate: 1
 baseurl: ""
@@ -11,6 +11,9 @@ links:
   giving: https://pushpay.com/g/secondsundaysd
   instagram: https://www.instagram.com/secondsundaysd
   facebook: https://www.facebook.com/secondsundaysd
+  youtube: https://www.youtube.com/channel/UCGzUnJfY2TQeJzQALnxgcng
+  app-ios: https://apps.apple.com/us/app/second-sunday/id1453092699
+  app-android: https://play.google.com/store/apps/details?id=io.pushpay.secondsundayministries
 
 # Gems
 plugins:

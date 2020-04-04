@@ -7,6 +7,15 @@ body {
   background-attachment: fixed;
   background-color: #AC9693;
 }
+body.page-attend {
+  background: #E86F5F;
+}
+
+.clear {
+  width: 100%;
+  height: 1px;
+  clear: both;
+}
 
 .container, .image-container {
   padding-left:  100px;
@@ -37,11 +46,19 @@ p.headline {
   margin: 0 0 40px 0;
 }
 
+p.margin-bottom {
+  margin-bottom: 100px;
+}
+
 .page-content {
   position: relative;
   background:#AC9693;
   padding: 100px 0 0 0;
   z-index: 1;
+  &.alternate {
+    background: #E86F5F;
+    padding: 0;
+  }
 }
 
 .vision-statement, .home-feature {
@@ -72,11 +89,6 @@ p.headline {
         margin: 0;
     }
   }
-  .clear {
-    width: 100%;
-    height: 1px;
-    clear: both;
-  }
 }
 
 .home-feature {
@@ -85,7 +97,7 @@ p.headline {
   margin-bottom: 100px;
   .home-feature-content {
     margin: 0 0 0 0;
-    padding: 0;
+    padding: 0 50px 0 0;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -100,9 +112,76 @@ p.headline {
   }
 }
 
+.event {
+  display: grid;
+  grid-gap: 50px;
+  grid-template-columns: 250px 1fr 150px;
+  margin-bottom: 50px;
+  img {
+    float: left;
+    width: 250px;
+    margin-right: 50px;
+  }
+  div.button {
+    display: grid;
+    align-items: center;
+  }
+  a.button {
+    text-align: center !important;
+    background: rgba(255, 255, 255, 0.15);
+    border: none;
+    padding: 0;
+  }
+  .event-info {
+    display: grid;
+    align-items: center;
+    h3 {
+      margin: 15px 0 0 0;
+    }
+    ul {
+      margin: 0;
+      padding: 0;
+      li {
+        font-weight: 900;
+        font-size: 16px;
+        line-height: 29px;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        color: #fff;
+        display: inline;
+        padding: 0 15px 0 20px;
+        position: relative;
+        line-height: 24px;
+      }
+      li:first-child {
+        padding-left: 0;
+      }
+      span.dot {
+        display: inline-block;
+        position: absolute;
+        width: 5px;
+        height: 5px;
+        background: rgba(255,255,255,.35);
+        border-radius: 5px;
+        top: 50%;
+        margin-top: -3px;
+        left: 0;
+      }
+      span.repeat {
+        display: inline-block;
+        position: relative;
+        top: 5px;
+        margin-right: 5px;
+        width: 24px;
+        height: 24px;
+        background: url(/assets/images/ui/repeat-icon.svg);
+
+      }
+    }
+  }
+}
+
 a.button {
-  display: flex;
-  flex-direction: row;
   padding: 0 30px;
   height: 60px;
   line-height: 60px;
@@ -127,6 +206,15 @@ a.button {
   .container, .image-container {
     padding: 0 50px;
   }
+
+  .event {
+    display: block;
+    div.button {
+      margin-top: 30px;
+      display: inline-block;
+    }
+  }
+
 }
 
 @media only screen and (max-width: 600px) {
@@ -165,6 +253,10 @@ a.button {
 p.headline {
   margin: 0 0 20px 0;
 }
+p.margin-bottom {
+  margin-bottom: 50px;
+}
+
 .vision-statement, .home-feature {
   padding-bottom: 50px;
   img {
@@ -190,6 +282,17 @@ p.headline {
   }
 }
 
+.event {
+  img {
+    position: relative;
+    float: none;
+    width: 100%;
+  }
+  .event-info {
+    display: block;
+    padding-top: 20px;
+  }
+}
 .home-feature {
   padding: 50px 0  0 0;
   .home-feature-content {
@@ -200,7 +303,6 @@ p.headline {
     transform: none;
   }
   a.button {
-    margin-top: 40px;
   }
   &.left {
     img {

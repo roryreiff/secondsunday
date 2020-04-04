@@ -42,12 +42,21 @@ footer {
       }
     }
     .facebook-icon {
-      margin-right: 0;
+      margin-right: 20px;
       a {
         display: inline-block;
         width: 40px;
         height: 40px;
         background: url(/assets/images/ui/facebook-icon.svg);
+      }
+    }
+    .youtube-icon {
+      margin-right: 0;
+      a {
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        background: url(/assets/images/ui/youtube-icon.svg);
       }
     }
   }

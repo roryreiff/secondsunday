@@ -3,8 +3,7 @@
 
   {% include head.html %}
 
-  <body class="{{page.body-class}}" style="background-image: url({{page.background-image}})"
-  >
+  <body class="{{page.body-class}}" {% if page.background-image %} style="background-image: url({{page.background-image}})"{% endif %}>
     <header>
     <!-- menu test as per https://codepen.io/markcaron/pen/pPZVWO -->
 
@@ -23,7 +22,7 @@
      <li><a href="/people">People</a></li>
      <li><a href="/attend">Attend</a></li>
      <li><a href="{{site.links.giving}}">Giving</a></li>
-     <li><a href="/contact">Contact</a></li>
+     <!--<li><a href="/contact">Contact</a></li>-->
    </ul>
   </div>
  </nav>
