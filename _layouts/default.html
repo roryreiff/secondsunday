@@ -58,22 +58,24 @@
     {% include footer.html %}
 
     <script type="text/javascript" src="/assets/js/rellax.min.js"></script>
+
+    {% if page.body-class == "page-home" %}
     <script type="text/javascript">
       window.addEventListener("load", function () {
         // Accepts any class name
         //var rellax = new Rellax('.rellax');
-        var rellax = new Rellax('.rellax');
+        var rellax = new Rellax('.outlier');
       });
     </script>
-
+    {% endif %}
     <!--
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init({
-        offset: 450
+        //offset: 100
       });
     </script>
-    -->
+  -->
 
     {% if site.ga_analytics %}
      <script>
