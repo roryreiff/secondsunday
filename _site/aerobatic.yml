@@ -3,4 +3,15 @@ deploy:
   ignore: []
   directory: _site
 plugins:
+  - name: form-submit
+    path: /contact-us
+    method: post
+    options:
+      formName: contact-us
+      redirectUrl: /thank-you
+      recaptchaSecret: $CONTACT_FORM_RECAPTCHA_KEY
+      targets:
+        - name: email
+          subject: 2S Website contact form submission
+          recipients: [roryreiff@gmail.com]
   - name: webpage

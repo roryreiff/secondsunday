@@ -3,11 +3,19 @@
 
   {% include head.html %}
 
-  <body class="{{page.body-class}}" {% if page.background-image %} style="background-image: url({{page.background-image}})"{% endif %}>
+  <body class="{{page.body-class}} hasbanner" {% if page.background-image %} style="background-image: url({{page.background-image}})"{% endif %}>
+
+    <div id="site-banner">
+      <ul>
+        <li class="break-line">Easter 2020<span class="dot"></span></li>
+        <li>Fri 7pm<span class="dot"></span></li>
+        <li>Sun 11am</li>
+      </ul>
+      <a class="button" href="https://www.youtube.com/channel/UCGzUnJfY2TQeJzQALnxgcng">Tune In</a>
+    </div>
+
     <header>
     <!-- menu test as per https://codepen.io/markcaron/pen/pPZVWO -->
-
-
  <nav id="main-menu" class="main-menu" aria-label="Main menu">
    <div class="container">
    <a href="#main-menu-toggle"

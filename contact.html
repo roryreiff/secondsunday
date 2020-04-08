@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Contact
-background-image: "/assets/images/vision/bg@2x.jpg"
 body-class: page-contact
 ---
 <div class="h1-container-sub">
@@ -11,4 +10,49 @@ body-class: page-contact
 </div>
 
 <div class="page-content">
+  <div class="container">
+
+    <form id="contactform" method="POST" action="/contact-us">
+    <!-- Form fields here -->
+    <label for="name">Name</label>
+    <input type="text" required name="name">
+
+    <label for="email">Email</label>
+    <input type="email" required name="email">
+
+    <label for="message">
+    <textarea name="message"></textarea>
+
+    <button type="submit">Submit</button>
+
+    <div
+      class="g-recaptcha"
+      data-sitekey="6Le56-YUAAAAAJEe6qmueEgyxqLdQRX0CiiNSUz3"
+      data-callback="recaptchaOnSubmit"
+      data-size="invisible"
+    ></div>
+  </form>
+
+  </div>
 </div>
+
+<!-- The script can go at the end of your body tag -->
+<script>
+  function onSubmitForm(event) {
+    // Allow for client validation to happen before the recaptcha
+    // Here we are just using HTML5 built-in form validation
+    grecaptcha.execute();
+
+    // Important to prevent the form from submitting on it's own
+    event.preventDefault();
+  }
+
+  function recaptchaOnSubmit(token) {
+    // Now submit the form
+    // Or instead of the line below, you can post the form using fetch or XHR.
+    document.getElementById('contactform').submit();
+  }
+
+  document.getElementById('contactform').addEventListener('submit', onSubmitForm);
+</script>
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>

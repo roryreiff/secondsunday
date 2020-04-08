@@ -50,11 +50,19 @@
 </head>
 
 
-  <body class="page-contact"  style="background-image: url(/assets/images/vision/bg@2x.jpg)">
+  <body class="page-contact hasbanner" >
+
+    <div id="site-banner">
+      <ul>
+        <li class="break-line">Easter 2020<span class="dot"></span></li>
+        <li>Fri 7pm<span class="dot"></span></li>
+        <li>Sun 11am</li>
+      </ul>
+      <a class="button" href="https://www.youtube.com/channel/UCGzUnJfY2TQeJzQALnxgcng">Tune In</a>
+    </div>
+
     <header>
     <!-- menu test as per https://codepen.io/markcaron/pen/pPZVWO -->
-
-
  <nav id="main-menu" class="main-menu" aria-label="Main menu">
    <div class="container">
    <a href="#main-menu-toggle"
@@ -98,7 +106,7 @@
 
     </header>
 
-    <div class="page-background" style="background-image: url(/assets/images/vision/bg@2x.jpg);"></div>
+    <div class="page-background" style="background-image: url();"></div>
 
     <div class="h1-container-sub">
   <div class="container">
@@ -107,7 +115,52 @@
 </div>
 
 <div class="page-content">
+  <div class="container">
+
+    <form id="contactform" method="POST" action="/contact-us">
+    <!-- Form fields here -->
+    <label for="name">Name</label>
+    <input type="text" required name="name">
+
+    <label for="email">Email</label>
+    <input type="email" required name="email">
+
+    <label for="message">
+    <textarea name="message"></textarea>
+
+    <button type="submit">Submit</button>
+
+    <div
+      class="g-recaptcha"
+      data-sitekey="6Le56-YUAAAAAJEe6qmueEgyxqLdQRX0CiiNSUz3"
+      data-callback="recaptchaOnSubmit"
+      data-size="invisible"
+    ></div>
+  </form>
+
+  </div>
 </div>
+
+<!-- The script can go at the end of your body tag -->
+<script>
+  function onSubmitForm(event) {
+    // Allow for client validation to happen before the recaptcha
+    // Here we are just using HTML5 built-in form validation
+    grecaptcha.execute();
+
+    // Important to prevent the form from submitting on it's own
+    event.preventDefault();
+  }
+
+  function recaptchaOnSubmit(token) {
+    // Now submit the form
+    // Or instead of the line below, you can post the form using fetch or XHR.
+    document.getElementById('contactform').submit();
+  }
+
+  document.getElementById('contactform').addEventListener('submit', onSubmitForm);
+</script>
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
 
     <footer>

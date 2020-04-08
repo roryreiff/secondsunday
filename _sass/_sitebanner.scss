@@ -1,0 +1,104 @@
+body.hasbanner .h1-container, body.hasbanner .h1-container-sub, body.hasbanner header {
+  top: 80px !important;
+}
+
+body.hasbanner .h1-container {
+  padding-bottom: 300px;
+}
+
+body.hasbanner .h1-container-sub {
+  padding-bottom: 200px;
+}
+
+#site-banner {
+  width: 100%;
+  height: 80px;
+  position: fixed;
+  background: #2E2E2E;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  ul {
+    background-image: url(/assets/images/easter-2020/easter-color-grid.svg);
+    padding-left: 100px;
+    background-repeat: no-repeat;
+    background-size: 80px 20px;
+    background-position: 0 50%;
+    margin-right: 40px;
+    margin-left: 15px;
+    li {
+      display: inline;
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 29px;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: #FFFFFF;
+      padding-right: 10px;
+      .dot {
+        width: 5px;
+        height: 5px;
+        background: rgba(255,255,255,.5);
+        border-radius: 50%;
+        display: inline-block;
+        position: relative;
+        margin-left: 15px;
+        top: -3px;
+      }
+    }
+  }
+  a {
+    margin-right: 20px;
+    height: 50px;
+    background: rgba(255,255,255,.15);
+    line-height: 50px;
+    border: 0;
+    padding: 0 20px;
+    min-width: 120px;
+    text-align: center;
+  }
+  a:hover {
+    text-decoration: none;
+    background: rgba(255,255,255,.20);
+  }
+}
+@media only screen and (max-width: 768px) {
+  #site-banner {
+    justify-content: space-between;
+    ul {
+      margin: 0 0 0 20px;
+    }
+  }
+}
+@media only screen and (max-width: 600px) {
+#site-banner {
+  ul {
+    padding: 18px 0 0 0;
+    background-size: 30px;
+    background-position: 0 0;
+    margin: 0 0 0 20px;
+    li {
+      font-size: 11px;
+      padding-right: 5px;
+      line-height: 12px;
+      .dot {
+        margin-left: 10px;
+      }
+    }
+    li.break-line {
+      display: block;
+      .dot {
+        display: none;
+      }
+    }
+  }
+  a {
+    height: 40px;
+    line-height: 40px;
+    font-size: 10px;
+    padding: 0;
+    min-width: 90px;
+  }
+}
+}
