@@ -7,7 +7,7 @@ body {
   background-attachment: fixed;
   background-color: #AC9693;
 }
-body.page-attend {
+body.page-attend, body.page-contact {
   background: #E86F5F;
 }
 
@@ -181,7 +181,7 @@ p.margin-bottom {
   }
 }
 
-a.button {
+a.button, button {
   padding: 0 30px;
   height: 60px;
   line-height: 60px;

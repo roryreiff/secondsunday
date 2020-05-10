@@ -50,7 +50,16 @@
 </head>
 
 
-  <body class="page-contact" >
+  <body class="page-contact hasbanner" >
+
+    <div id="site-banner">
+  <ul>
+    <li>Second Sunday Live<span class="dot"></span></li>
+    <li>Sundays at 5pm</li>
+  </ul>
+  <a class="button" href="https://www.youtube.com/secondsundaysd">Tune In</a>
+</div>
+
 
     <header>
     <!-- menu test as per https://codepen.io/markcaron/pen/pPZVWO -->
@@ -68,7 +77,7 @@
      <li><a href="/people">People</a></li>
      <li><a href="/attend">Attend</a></li>
      <li><a href="https://pushpay.com/g/secondsundaysd">Giving</a></li>
-     <!--<li><a href="/contact">Contact</a></li>-->
+     <li><a href="/contact">Contact</a></li>
    </ul>
   </div>
  </nav>
@@ -105,21 +114,26 @@
   </div>
 </div>
 
-<div class="page-content">
+<div class="page-content alternate">
   <div class="container">
 
     <form id="contactform" method="POST" action="/contact-us">
     <!-- Form fields here -->
-    <label for="name">Name</label>
-    <input type="text" required name="name">
 
-    <label for="email">Email</label>
-    <input type="email" required name="email">
+    <div class="form-field">
+      <label for="name">Name</label>
+      <input type="text" required name="name">
+    </div>
 
-    <label for="message">
+    <div class="form-field">
+      <label for="email">Email</label>
+      <input type="email" required name="email">
+    </div>
+
+    <label for="message">Message</label>
     <textarea name="message"></textarea>
 
-    <button type="submit">Submit</button>
+    <button class="button" type="submit">Submit</button>
 
     <div
       class="g-recaptcha"
@@ -171,8 +185,8 @@
   <div class="container">
     <ul class="links">
       <li>© Second Sunday Ministries, 2020</li>
-      <!--<li><a href="/contact">Contact</a></li>-->
       <li><a href="https://pushpay.com/g/secondsundaysd">Giving</a></li>
+      <li><a href="/contact">Contact</a></li>
     </ul>
     <ul>
       <li class="instagram-icon"><a href="https://www.instagram.com/secondsundaysd"></a></li>

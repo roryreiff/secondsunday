@@ -9,21 +9,26 @@ body-class: page-contact
   </div>
 </div>
 
-<div class="page-content">
+<div class="page-content alternate">
   <div class="container">
 
     <form id="contactform" method="POST" action="/contact-us">
     <!-- Form fields here -->
-    <label for="name">Name</label>
-    <input type="text" required name="name">
 
-    <label for="email">Email</label>
-    <input type="email" required name="email">
+    <div class="form-field">
+      <label for="name">Name</label>
+      <input type="text" required name="name">
+    </div>
 
-    <label for="message">
+    <div class="form-field">
+      <label for="email">Email</label>
+      <input type="email" required name="email">
+    </div>
+
+    <label for="message">Message</label>
     <textarea name="message"></textarea>
 
-    <button type="submit">Submit</button>
+    <button class="button" type="submit">Submit</button>
 
     <div
       class="g-recaptcha"

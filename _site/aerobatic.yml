@@ -13,5 +13,5 @@ plugins:
       targets:
         - name: email
           subject: 2S Website contact form submission
-          recipients: [roryreiff@gmail.com]
+          recipients: [jay@secondsundaysd.com]
   - name: webpage
